@@ -1,0 +1,102 @@
+$primary: #E6EBE0;
+$secondary: #9BC1BC;
+$text-color: white;
+$menu-color: #5D576B;
+$dark: #ED6A5A;
+
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.navbar{
+    background-color: $secondary;
+
+    #nav-bar{
+        display: flex;
+        justify-content: center;
+        font-family: 'Caveat', cursive;
+    
+        .navbar-brand{
+            font-size: 1.8rem;
+            color: $text-color;
+        }
+    }
+}
+
+.main-content{
+    margin: 1rem;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .wrapper{
+        height: auto;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include media-breakpoint-down(md){
+        .wrapper{
+            height: auto;
+            width: auto;
+        }
+    }
+
+    .center-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        .canvas{
+            background-color: $primary;
+            height: 476px;
+            width: 476px;
+            display: grid;
+        }
+
+        .grid-16x16{
+            grid-template-columns: repeat(16, 1fr);
+            grid-template-rows: repeat(16, 1fr);
+        }
+
+        @include media-breakpoint-down(xs){
+            .canvas{
+                height: 225px;
+                width: 225px;
+            }
+        }
+    }
+
+    .menu-content{
+        margin: 1rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .btn{
+            margin: .5rem 0;
+        }
+
+        .option{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 1rem;
+        }
+    }
+
+    @include media-breakpoint-down(md){
+        .menu-content{
+            margin: 1rem;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .btn{
+                margin: .5rem;
+            }
+        }
+    }
+
+}
