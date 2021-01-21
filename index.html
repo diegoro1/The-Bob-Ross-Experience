@@ -25,15 +25,24 @@
     <div class="container">
         <div class="main-content">
             <div class="row wrapper">
-                <div class="row menu-content">
-                    <div class="col-2 option">
-                        <button class="btn btn-dark">Black</button>
+                <div class="menu-content">
+                    <div class="option">
+                        <button class="btn btn-block btn-dark">Black</button>
                     </div>
-                    <div class="col-2 option">
-                        <button class="btn btn-dark">Eraser</button>
+                    <div class="option">
+                        <button class="btn btn-block btn-dark">Eraser</button>
                     </div>
-                    <div class="col-2 option">
-                        <button class="btn btn-dark">Pick</button>
+                    <div class="option">
+                        <button class="btn btn-block btn-dark">Rainbow</button>
+                    </div>
+                    <div class="option">
+                        <button class="btn btn-block btn-dark">Gray Scale</button>
+                    </div>
+                    <div class="option">
+                        <button class="btn btn-block btn-dark color-pick">
+                        Pick:
+                        <input type="color" id="color-menu">
+                        </button>
                     </div>
                 </div>
                 <div class="row center-content">
@@ -41,12 +50,13 @@
 
                     </div>
                 </div>
-                <div class="row menu-content">
-                    <div class="col-3 option">
+                <div class="menu-content">
+                    <div class="option">
                         <button class="btn btn-dark">Clear</button>
                     </div>
-                    <div class="col-4 option">
-                        <input type="range" id="pixel-size-range" min="4" max="100" value="16">
+                    <div class="option range">
+                        Pixel Size
+                        <input type="range" id="pixel-size-range" min="16" max="100" value="16">
                     </div>
                 </div>
             </div>
