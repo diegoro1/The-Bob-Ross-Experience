@@ -9979,6 +9979,7 @@ h3 {
 }
 .main-content .menu-content .range #pixel-size-range {
   width: 100%;
+  color: #ED6A5A;
 }
 @media (max-width: 575.98px) {
   .main-content .menu-content {
