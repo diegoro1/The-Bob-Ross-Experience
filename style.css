@@ -9992,4 +9992,14 @@ h3 {
   }
 }
 
+footer {
+  height: 10vh;
+  background-color: #9BC1BC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 0.8rem;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -118,3 +118,13 @@ $dark: #ED6A5A;
     }
     
 }
+
+footer{
+    height: 10vh;
+    background-color: $secondary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-color;
+    font-size: .8rem;
+}
