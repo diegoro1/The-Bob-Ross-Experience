@@ -9945,10 +9945,6 @@ h3 {
   width: 476px;
   display: grid;
 }
-.main-content .center-content .grid-16x16 {
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
-}
 @media (max-width: 575.98px) {
   .main-content .center-content .canvas {
     height: 225px;
@@ -9971,7 +9967,7 @@ h3 {
   margin-left: 0.5rem;
 }
 .main-content .menu-content .range {
-  width: 35vw;
+  width: 350px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -9980,6 +9976,11 @@ h3 {
 .main-content .menu-content .range #pixel-size-range {
   width: 100%;
   color: #ED6A5A;
+}
+@media (max-width: 575.98px) {
+  .main-content .menu-content .range {
+    width: 100px;
+  }
 }
 @media (max-width: 575.98px) {
   .main-content .menu-content {
